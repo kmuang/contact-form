@@ -1,6 +1,7 @@
 # Frontend Mentor - Contact form solution
 
-This is a solution to the [Contact form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Contact form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj). 
+Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -32,12 +33,6 @@ Users should be able to:
 
 ![Project screenshot](design/desktop-preview.jpg)
 
-### Links 🔗
-
-- Solution URL: [https://github.com/JohnMwendwa/contact-form](https://github.com/JohnMwendwa/contact-form)
-- Live Site URL: [https://johnmwendwa.github.io/contact-form](https://johnmwendwa.github.io/contact-form/)
-
-## My process 🛠
 
 ### Built with
 
@@ -48,10 +43,6 @@ Users should be able to:
 - Mobile-first workflow
 - JavaScript
 
-## Author 🤵
-
-- Website - [John Mwendwa](https://johnmwendwa.vercel.app/)
-- Frontend Mentor - [@JohnMwendwa](https://www.frontendmentor.io/profile/JohnMwendwa)
 
 ## Reminder 📝
 
