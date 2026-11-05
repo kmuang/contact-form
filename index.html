@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Contact form</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Contact Us</h1>
+        <form action="https://formspree.io/f/mkjnrrwv" method="POST" novalidate>
+          <div class="input__wrapper">
+            <div class="input__group">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                required
+                aria-describedby="first-name-error"
+              />
+              <span
+                class="error first__error"
+                id="first-name-error"
+                aria-live="polite"
+                aria-atomic="true"
+              ></span>
+            </div>
+
+            <div class="input__group">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                required
+                aria-describedby="last-name-error"
+              />
+              <span
+                class="error last__error"
+                id="last-name-error"
+                aria-live="polite"
+                aria-atomic="true"
+              ></span>
+            </div>
+          </div>
+
+          <div class="input__group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              aria-describedby="email-error"
+            />
+            <span
+              class="error email__error"
+              id="email-error"
+              aria-live="polite"
+              aria-atomic="true"
+            ></span>
+          </div>
+          <div class="input__group">
+            <fieldset class="query-group">
+              <legend class="query-label">Query Type</legend>
+              <div class="query-type">
+                <label for="general">
+                  <input
+                    id="general"
+                    type="radio"
+                    name="query-type"
+                    value="general"
+                    required
+                    aria-describedby="query-error"
+                  />
+                  <span> General Enquiry</span>
+                </label>
+                <label for="support">
+                  <input
+                    id="support"
+                    type="radio"
+                    name="query-type"
+                    value="support"
+                    aria-describedby="query-error"
+                  />
+                  <span> Support Request</span>
+                </label>
+              </div>
+              <span
+                class="error query__error"
+                id="query-error"
+                aria-live="polite"
+                aria-atomic="true"
+              ></span>
+            </fieldset>
+          </div>
+
+          <div class="input__group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              aria-describedby="message-error"
+            ></textarea>
+            <span
+              class="error message__error"
+              id="message-error"
+              aria-live="polite"
+              aria-atomic="true"
+            ></span>
+          </div>
+
+          <div class="input__group">
+            <label for="consent" class="consent">
+              <input
+                id="consent"
+                type="checkbox"
+                name="consent"
+                required
+                aria-describedby="consent-error"
+              />
+              <span> I consent to being contacted by the team</span>
+            </label>
+            <span
+              class="error consent__error"
+              id="consent-error"
+              aria-live="polite"
+              aria-atomic="true"
+            ></span>
+          </div>
+
+          <button type="submit">Submit</button>
+          <p class="submission__error" role="alert" hidden></p>
+        </form>
+        <!-- Success Message container -->
+        <div class="success__message" role="status" aria-live="polite" aria-atomic="true">
+          <h2>
+            <span>
+              <img
+                src="./assets/images/icon-success-check.svg"
+                alt="checkmark"
+              /> </span
+            >Message Sent
+          </h2>
+          <p>Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
